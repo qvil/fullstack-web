@@ -16,8 +16,9 @@
 
 ### Backend
 
-1. - [ ] Webserver(Express?)
-1. - [ ] Database(PostgreSQL? MySQL?)
+1. - [ ] ~~Webserver(Express?)~~
+1. - [ ] ~~Database(PostgreSQL? MySQL?)~~
+1. - [ ] Firebase(Serverless)
 1. - [ ] 배포(AWS, 도메인 연결)
 
 ## [문서](./docs)
