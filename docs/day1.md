@@ -1,5 +1,7 @@
 # Day 1(HTML)
 
+다양한 HTML Tag들을 사용해본다.
+
 [index.html](../src/index.html) 파일 참고
 
 ## 배우는 것
