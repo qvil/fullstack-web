@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>작성하기</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td colspan="2"><h1>현재 관할 구역은 쌍용동 입니다.</h1></td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>아파트</td>
+          <td>
+            <select class="apt-list">
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>동</td>
+          <td><input class="dong" type="number" /></td>
+        </tr>
+        <tr>
+          <td>호</td>
+          <td><input class="ho" type="number" /></td>
+        </tr>
+        <tr>
+          <td>고객요청사항</td>
+          <td>
+            <textarea
+              name=""
+              id=""
+              class="requirement"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button class="save-button">저장</button>
+            <button class="reset-button">초기화</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="./js/write.js"></script>
+  </body>
+</html>
