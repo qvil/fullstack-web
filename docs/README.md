@@ -36,3 +36,11 @@ The Apache HTTP Server Project
 $ docker build -t my-apache2 .
 $ docker run -dit --name my-running-app -p 8080:80 my-apache2
 ```
+
+## 웹호스팅
+
+### Github pages
+
+1. 저장소 세팅에서 Source를 master branch로 선택해주면 끝.
+
+예) https://qvil.github.io/fullstack-web/src/write.html
