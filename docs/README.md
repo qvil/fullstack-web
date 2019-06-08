@@ -21,3 +21,18 @@ http://localhost:8000/src/write.html 이런 식으로 들어가면 됨.
   <meta http-equiv="refresh" content="30" />
 </head>
 ```
+
+### 웹서버
+
+The Apache HTTP Server Project
+
+> https://hub.docker.com/_/httpd
+
+1. Docker Install
+1. ~~[Dockerfile](/Dockerfile) 생성~~(이미있음)
+1. 아래 명령어 실행
+
+```
+$ docker build -t my-apache2 .
+$ docker run -dit --name my-running-app -p 8080:80 my-apache2
+```
