@@ -7,10 +7,11 @@ const aptList = [
 
 function initialize() {
   createAptList(aptList);
+  getDataFromDatabase();
 
   // Event Listener
   // 문서 작성하다가 나가지는 경우 막음
-  window.addEventListener("beforeunload", handleBeforeUnload);
+  // window.addEventListener("beforeunload", handleBeforeUnload);
 
   document.querySelector(".save-button").addEventListener("click", getAllData);
   document.querySelector(".reset-button").addEventListener("click", initForm);
@@ -52,6 +53,21 @@ function initForm() {
   } else {
     return;
   }
+}
+
+function getDataFromDatabase() {
+  myFirebase
+    .getData()
+    .then(function(res) {
+      console.log(res);
+      document.querySelector(".apt-list").value = res.apt;
+      document.querySelector(".dong").value = res.dong;
+      document.querySelector(".ho").value = res.ho;
+      document.querySelector(".requirement").value = res.requirement;
+    })
+    .catch(function(error) {
+      console.error(error);
+    });
 }
 
 initialize();
