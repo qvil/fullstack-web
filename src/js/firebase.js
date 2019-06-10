@@ -6,7 +6,7 @@ var db = firebase.firestore();
 
 var myFirebase = {
   getData: function() {
-    return new Promise(function(resolve, reject) {
+    return new Promise((resolve, reject) => {
       db.collection("data")
         .get()
         .then(querySnapshot => {
@@ -14,7 +14,7 @@ var myFirebase = {
             resolve(doc.data());
           });
         })
-        .catch(function(error) {
+        .catch(error => {
           console.error(error);
           reject(error);
         });
