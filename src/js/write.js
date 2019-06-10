@@ -7,7 +7,7 @@ const aptList = [
 
 function initialize() {
   createAptList(aptList);
-  getDataFromDatabase();
+  // getDataFromDatabase();
 
   // Event Listener
   // 문서 작성하다가 나가지는 경우 막음

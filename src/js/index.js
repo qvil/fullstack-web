@@ -1,6 +1,10 @@
 const index = {
   initialize: () => {
     index.createListAsync();
+
+    document.querySelector("button").addEventListener("click", () => {
+      window.location.href = "./write.html";
+    });
   },
   createListAsync: () => {
     const list = document.querySelector("div.list");
