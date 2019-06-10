@@ -13,7 +13,9 @@ function initialize() {
   // 문서 작성하다가 나가지는 경우 막음
   // window.addEventListener("beforeunload", handleBeforeUnload);
 
-  document.querySelector(".save-button").addEventListener("click", getAllData);
+  document.querySelector(".save-button").addEventListener("click", () => {
+    myFirebase.setData(getAllData());
+  });
   document.querySelector(".reset-button").addEventListener("click", initForm);
 }
 
@@ -25,12 +27,14 @@ function createAptList(aptList) {
 }
 
 function getAllData() {
-  const aptList = document.querySelector(".apt-list").value;
+  const apt = document.querySelector(".apt-list").value;
+  const docName = apt;
   const dong = document.querySelector(".dong").value;
   const ho = document.querySelector(".ho").value;
   const requirement = document.querySelector(".requirement").value;
-  const dataObj = { aptList, dong, ho, requirement };
-  alert(JSON.stringify(dataObj));
+  const dataObj = { docName, apt, dong, ho, requirement };
+  // alert(JSON.stringify(dataObj));
+  return dataObj;
 }
 
 function handleBeforeUnload(event) {
