@@ -9,16 +9,19 @@ const index = {
   createListAsync: () => {
     const list = document.querySelector("div.list");
     const loading = document.querySelector("div.loading");
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.setAttribute("href", "write.html");
 
     myFirebase.getData().then(res => {
       console.log(res);
-      list
-        .appendChild(li)
-        .appendChild(a)
-        .append(res.apt);
+      res.forEach(element => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        const apt = aptList.filter(apt => apt.value === element.apt);
+        a.setAttribute("href", "write.html");
+        list
+          .appendChild(li)
+          .appendChild(a)
+          .append(apt[0].title);
+      });
       loading.style.display = "none";
     });
   }

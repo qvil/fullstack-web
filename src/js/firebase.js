@@ -8,12 +8,14 @@ const collectionName = "data";
 var myFirebase = {
   getData: function() {
     return new Promise((resolve, reject) => {
+      let result = [];
       db.collection(collectionName)
         .get()
         .then(querySnapshot => {
           querySnapshot.forEach(doc => {
-            resolve(doc.data());
+            result.push(doc.data());
           });
+          resolve(result);
         })
         .catch(error => {
           console.error(error);
