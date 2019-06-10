@@ -1,5 +1,16 @@
 function initialize() {
+  // window.location.href
+  const url = new URL(window.location.href);
+  const apt = url.searchParams.get("apt");
+  const dong = url.searchParams.get("dong");
+  const ho = url.searchParams.get("ho");
+  const requirement = url.searchParams.get("requirement");
   createAptList(aptList);
+
+  document.querySelector(".apt-list").value = apt ? apt : aptList[0].value;
+  document.querySelector(".dong").value = dong;
+  document.querySelector(".ho").value = ho;
+  document.querySelector(".requirement").value = requirement;
   // getDataFromDatabase();
 
   // Event Listener
