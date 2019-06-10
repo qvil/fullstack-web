@@ -24,3 +24,11 @@
 ## [문서](./docs)
 
 [docs](./docs) 폴더를 참고하세요.
+
+## 시작
+
+### Docker
+
+1. Docker 설치
+1. `docker-compose up -d`
+1. http://localhost:8080
