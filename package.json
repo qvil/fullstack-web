@@ -1,0 +1,26 @@
+{
+  "name": "fullstack-web",
+  "version": "1.0.0",
+  "description": "교육용 풀스택 웹서비스. 🌏",
+  "main": "src/index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "deploy": "now"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qvil/fullstack-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qvil/fullstack-web/issues"
+  },
+  "homepage": "https://github.com/qvil/fullstack-web#readme",
+  "devDependencies": {
+    "now": "^15.4.0"
+  }
+}
