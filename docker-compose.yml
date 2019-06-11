@@ -3,6 +3,6 @@ services:
   web:
     image: nginx
     volumes:
-      - ./src:/usr/share/nginx/html:ro
+      - .:/usr/share/nginx/html:ro
     ports:
       - 8080:80
