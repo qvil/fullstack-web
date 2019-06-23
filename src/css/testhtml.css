@@ -1,0 +1,18 @@
+body {
+  background-color: #aabbcc;
+}
+p {
+  color: blanchedalmond;
+}
+strong {
+  color: blue;
+}
+
+.login {
+  font-size: 20px;
+}
+#login2 {
+  cursor: alias;
+  font-size: 50px;
+  font-weight: normal;
+}
