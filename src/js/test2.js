@@ -10,9 +10,5 @@ document.querySelector(".alert1").addEventListener("click", function() {
 });
 
 document.querySelector(".alert2").addEventListener("click", function() {
-  a(name);
+  alert("taesu");
 });
-
-function a(name) {
-  alert("sunman");
-}
