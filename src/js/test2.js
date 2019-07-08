@@ -13,10 +13,10 @@ document.querySelector(".alert2").addEventListener("click", function() {
   alert("taesu");
 });
 
-// function c() {
-//   alert(document.querySelector("input").value);
-// }
-
 // document.querySelector("#alert3").addEventListener("click", function() {
-//   c();
+// alert("text");
 // });
+
+function alert3_click() {
+  alert(document.querySelector("input").value);
+}
