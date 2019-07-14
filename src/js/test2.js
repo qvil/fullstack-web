@@ -17,6 +17,10 @@ document.querySelector(".alert2").addEventListener("click", function() {
 // alert("text");
 // });
 
-function alert3_click() {
-  alert(document.querySelector("input").value);
-}
+// function alert3_click() {
+// alert(document.querySelector("input").value);
+// }
+
+document.querySelector("#alert3").addEventListener("click", function() {
+  alert(document.querySelector(".postmenCode").value);
+});
